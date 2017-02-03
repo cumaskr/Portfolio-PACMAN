@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="GameFramework2D">
+      <UniqueIdentifier>{f4c37bdc-c7f9-4130-8fa0-47af68980a7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainGame">
+      <UniqueIdentifier>{f532adc6-7329-470f-b0d5-feab1f3a4d61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameFramework2D\유틸">
+      <UniqueIdentifier>{6441bbc1-331a-43c8-bc2c-b7a73778afc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameFramework2D\매니져">
+      <UniqueIdentifier>{978859d8-3262-4e93-9c08-a7c7075deee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinMain">
+      <UniqueIdentifier>{fa527a2a-bde4-43de-bdce-dfc51ea32521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameFramework2D\이미지">
+      <UniqueIdentifier>{90771cd5-bf87-4d7d-b5ad-bef75810b74a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameFramework2D\총알">
+      <UniqueIdentifier>{5dee4aa4-f989-4dbb-b370-b3ce93460586}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameFramework2D\체력바">
+      <UniqueIdentifier>{303adae7-c0be-4aeb-9338-cdab4bd4f769}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainGame\픽셀충돌">
+      <UniqueIdentifier>{0c01106e-4580-4bd2-a61b-c8e95bed8e7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainGame\저장자료">
+      <UniqueIdentifier>{927b22da-bd5f-4852-8baa-ea618e6fafde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameFramework2D\TXT데이터">
+      <UniqueIdentifier>{e46cdb79-8e18-414f-9c26-573c31816078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainGame\씬테스트">
+      <UniqueIdentifier>{5fc04199-a219-4264-adcd-42acb77d8329}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameFramework2D\INI데이터">
+      <UniqueIdentifier>{fbab45f4-68b6-4088-b4f6-02faed183168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainGame\INI테스트">
+      <UniqueIdentifier>{2a6a88a9-17a4-42fc-828b-5e2153340e51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameFramework2D\로딩">
+      <UniqueIdentifier>{6375b8a1-c499-4877-a8d8-89de9b6e4545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainGame\로딩화면">
+      <UniqueIdentifier>{8d24ccb9-f027-4090-9de7-7e1be54d0194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainGame\소리재생">
+      <UniqueIdentifier>{afb6b8b1-a1ce-453f-9359-64c2b271e539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainGame\팩맨">
+      <UniqueIdentifier>{70a558d0-5381-4e3a-a1fe-7607b77dd914}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mainGame.h">
+      <Filter>MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="commonMacroFunction.h">
+      <Filter>GameFramework2D\유틸</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>WinMain</Filter>
+    </ClInclude>
+    <ClInclude Include="singletonBase.h">
+      <Filter>GameFramework2D\매니져</Filter>
+    </ClInclude>
+    <ClInclude Include="keyManager.h">
+      <Filter>GameFramework2D\매니져</Filter>
+    </ClInclude>
+    <ClInclude Include="randomFunction.h">
+      <Filter>GameFramework2D\유틸</Filter>
+    </ClInclude>
+    <ClInclude Include="gameNode.h">
+      <Filter>GameFramework2D</Filter>
+    </ClInclude>
+    <ClInclude Include="image.h">
+      <Filter>GameFramework2D\이미지</Filter>
+    </ClInclude>
+    <ClInclude Include="imageManager.h">
+      <Filter>GameFramework2D\매니져</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet.h">
+      <Filter>GameFramework2D\총알</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>GameFramework2D\유틸</Filter>
+    </ClInclude>
+    <ClInclude Include="progressBar.h">
+      <Filter>GameFramework2D\체력바</Filter>
+    </ClInclude>
+    <ClInclude Include="pixelCollision.h">
+      <Filter>MainGame\픽셀충돌</Filter>
+    </ClInclude>
+    <ClInclude Include="playerData.h">
+      <Filter>MainGame\저장자료</Filter>
+    </ClInclude>
+    <ClInclude Include="txtData.h">
+      <Filter>GameFramework2D\TXT데이터</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneManager.h">
+      <Filter>GameFramework2D\매니져</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneTest.h">
+      <Filter>MainGame\씬테스트</Filter>
+    </ClInclude>
+    <ClInclude Include="iniData.h">
+      <Filter>GameFramework2D\INI데이터</Filter>
+    </ClInclude>
+    <ClInclude Include="iniTestScene.h">
+      <Filter>MainGame\INI테스트</Filter>
+    </ClInclude>
+    <ClInclude Include="loading.h">
+      <Filter>GameFramework2D\로딩</Filter>
+    </ClInclude>
+    <ClInclude Include="loadingScene.h">
+      <Filter>MainGame\로딩화면</Filter>
+    </ClInclude>
+    <ClInclude Include="timeManager.h">
+      <Filter>GameFramework2D\매니져</Filter>
+    </ClInclude>
+    <ClInclude Include="soundManager.h">
+      <Filter>GameFramework2D\매니져</Filter>
+    </ClInclude>
+    <ClInclude Include="soundTestScene.h">
+      <Filter>MainGame\소리재생</Filter>
+    </ClInclude>
+    <ClInclude Include="cIntro.h">
+      <Filter>MainGame\팩맨</Filter>
+    </ClInclude>
+    <ClInclude Include="cMenu.h">
+      <Filter>MainGame\팩맨</Filter>
+    </ClInclude>
+    <ClInclude Include="cMapChoice.h">
+      <Filter>MainGame\팩맨</Filter>
+    </ClInclude>
+    <ClInclude Include="pacmanMapScene.h">
+      <Filter>MainGame\팩맨</Filter>
+    </ClInclude>
+    <ClInclude Include="pacmanMapNode.h">
+      <Filter>MainGame\팩맨</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mainGame.cpp">
+      <Filter>MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="winMain.cpp">
+      <Filter>WinMain</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>WinMain</Filter>
+    </ClCompile>
+    <ClCompile Include="keyManager.cpp">
+      <Filter>GameFramework2D\매니져</Filter>
+    </ClCompile>
+    <ClCompile Include="gameNode.cpp">
+      <Filter>GameFramework2D</Filter>
+    </ClCompile>
+    <ClCompile Include="image.cpp">
+      <Filter>GameFramework2D\이미지</Filter>
+    </ClCompile>
+    <ClCompile Include="imageManager.cpp">
+      <Filter>GameFramework2D\매니져</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet.cpp">
+      <Filter>GameFramework2D\총알</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>GameFramework2D\유틸</Filter>
+    </ClCompile>
+    <ClCompile Include="progressBar.cpp">
+      <Filter>GameFramework2D\체력바</Filter>
+    </ClCompile>
+    <ClCompile Include="pixelCollision.cpp">
+      <Filter>MainGame\픽셀충돌</Filter>
+    </ClCompile>
+    <ClCompile Include="playerData.cpp">
+      <Filter>MainGame\저장자료</Filter>
+    </ClCompile>
+    <ClCompile Include="txtData.cpp">
+      <Filter>GameFramework2D\TXT데이터</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneManager.cpp">
+      <Filter>GameFramework2D\매니져</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneTest.cpp">
+      <Filter>MainGame\씬테스트</Filter>
+    </ClCompile>
+    <ClCompile Include="iniData.cpp">
+      <Filter>GameFramework2D\INI데이터</Filter>
+    </ClCompile>
+    <ClCompile Include="iniTestScene.cpp">
+      <Filter>MainGame\INI테스트</Filter>
+    </ClCompile>
+    <ClCompile Include="loading.cpp">
+      <Filter>GameFramework2D\로딩</Filter>
+    </ClCompile>
+    <ClCompile Include="loadingScene.cpp">
+      <Filter>MainGame\로딩화면</Filter>
+    </ClCompile>
+    <ClCompile Include="timeManager.cpp">
+      <Filter>GameFramework2D\매니져</Filter>
+    </ClCompile>
+    <ClCompile Include="soundManager.cpp">
+      <Filter>GameFramework2D\매니져</Filter>
+    </ClCompile>
+    <ClCompile Include="soundTestScene.cpp">
+      <Filter>MainGame\소리재생</Filter>
+    </ClCompile>
+    <ClCompile Include="cIntro.cpp">
+      <Filter>MainGame\팩맨</Filter>
+    </ClCompile>
+    <ClCompile Include="cMenu.cpp">
+      <Filter>MainGame\팩맨</Filter>
+    </ClCompile>
+    <ClCompile Include="cMapChoice.cpp">
+      <Filter>MainGame\팩맨</Filter>
+    </ClCompile>
+    <ClCompile Include="pacmanMapScene.cpp">
+      <Filter>MainGame\팩맨</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
