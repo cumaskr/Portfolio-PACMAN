@@ -8,6 +8,12 @@
 #define SAMPLETILEX 20
 #define SAMPLETILEY 13
 
+
+
+
+
+
+
 enum CTRL
 {
 	CTRL_SAVE,
@@ -32,6 +38,8 @@ struct tagTiles
 	int terrainFrameY;
 	int x, y;
 };
+
+ 
 
 struct tagSampleTiles
 {

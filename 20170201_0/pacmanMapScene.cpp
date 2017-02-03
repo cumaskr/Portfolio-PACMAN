@@ -229,7 +229,6 @@ void pacmanMapScene::cameraMove()
 				}
 			}
 		}
-
 	}
 }
 
