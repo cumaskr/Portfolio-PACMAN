@@ -8,12 +8,6 @@
 #define SAMPLETILEX 20
 #define SAMPLETILEY 10
 
-
-
-
-
-
-
 enum CTRL
 {
 	CTRL_SAVE,

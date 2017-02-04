@@ -61,9 +61,34 @@ void loadingScene::loadingImage(void)
 	_loading->loadImage("메뉴_종료2", "menu_4_big.bmp", 210, 110, true, RGB(255, 0, 255));
 	_loading->loadImage("선택_백그라운드", "choice_back.bmp", WINSIZEX, WINSIZEY, true, RGB(255, 0, 255));
 	_loading->loadFrameImage("pacmanMap", "pacmanMap1.bmp", 600, 300, 20, 10);
-	_loading->loadImage("maptooMenu", "maptooMenu0.bmp", 20, 30, true, RGB(255, 0, 255));
+	//_loading->loadImage("maptooMenu", "maptooMenu0.bmp", 20, 30, true, RGB(255, 0, 255));
 	_loading->loadImage("ChangeSampleImgMenu", "ChangeSampleImgMenu.bmp", 20, 50, true, RGB(255, 0, 255));
 	_loading->loadImage("ChangeSampleImgMenu2", "ChangeSampleImgMenu2.bmp", 20, 50, true, RGB(255, 0, 255));
+
+	//맵툴씬 관련 이미지들
+	_loading->loadImage("maptooMenu", "maptooMenu0.bmp", 20, 30, true, RGB(255, 0, 255));
+	_loading->loadImage("maptooMenu1", "maptooMenu1.bmp", 20, 30, true, RGB(255, 0, 255));
+	_loading->loadImage("ChangeSampleImgMenu", "ChangeSampleImgMenu.bmp", 20, 50, true, RGB(255, 0, 255));
+	_loading->loadImage("ChangeSampleImgMenu2", "ChangeSampleImgMenu2.bmp", 20, 50, true, RGB(255, 0, 255));
+	_loading->loadImage("ChangeSampleImgMenu3", "ChangeSampleImgMenu3.bmp", 20, 50, true, RGB(255, 0, 255));
+	_loading->loadImage("ChangeSampleImgMenu4", "ChangeSampleImgMenu4.bmp", 20, 50, true, RGB(255, 0, 255));
+	_loading->loadImage("save", "save.bmp", 70, 50, true, RGB(255, 0, 255));
+	_loading->loadImage("saveBig", "saveBig.bmp", 105, 70, true, RGB(255, 0, 255));
+	_loading->loadImage("load", "load.bmp", 70, 50, true, RGB(255, 0, 255));
+	_loading->loadImage("loadBig", "loadBig.bmp", 105, 70, true, RGB(255, 0, 255));
+	_loading->loadImage("back", "back.bmp", 70, 50, true, RGB(255, 0, 255));
+	_loading->loadImage("backBig", "backBig.bmp", 105, 70, true, RGB(255, 0, 255));
+	_loading->loadImage("draw", "draw.bmp", 83, 50, true, RGB(255, 0, 255));
+	_loading->loadImage("drawBig", "drawBig.bmp", 105, 70, true, RGB(255, 0, 255));
+	_loading->loadImage("map", "map.bmp", 70, 50, true, RGB(255, 0, 255));
+	_loading->loadImage("mapBig", "mapBig.bmp", 105, 70, true, RGB(255, 0, 255));
+	_loading->loadFrameImage("maptoolPacmanAny", "maptoolPacmanAny.bmp", 102, 70, 3, 2, true, RGB(255, 0, 255));
+	_loading->loadFrameImage("maptoolEnemyAny0", "maptoolEnemyAny0.bmp", 76, 70, 2, 2, true, RGB(255, 0, 255));
+	_loading->loadFrameImage("maptoolEnemyAny1", "maptoolEnemyAny1.bmp", 76, 70, 2, 2, true, RGB(255, 0, 255));
+	_loading->loadFrameImage("maptoolEnemyAny2", "maptoolEnemyAny2.bmp", 76, 70, 2, 2, true, RGB(255, 0, 255));
+	_loading->loadFrameImage("maptoolEnemyAny3", "maptoolEnemyAny3.bmp", 76, 70, 2, 2, true, RGB(255, 0, 255));
+	_loading->loadFrameImage("maptoolEnemyAny4", "maptoolEnemyAny4.bmp", 76, 70, 2, 2, true, RGB(255, 0, 255));
+
 }
 //로딩사운드 함수(이곳에 사운드를 전부 넣어라)
 void loadingScene::loadingSound(void)

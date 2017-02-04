@@ -51,7 +51,7 @@ void mainGame::update(void)
 void mainGame::render(void)
 {
 	//Èò»ö ºó ºñÆ®¸Ê (·»´õ¿¡ ±×³É ±×´ë·Î µÑ°Í!!)
-	PatBlt(getMemDC(), 0, 0, WINSIZEX, WINSIZEY, WHITENESS);
+	PatBlt(getMemDC(), 0, 0, WINSIZEX, WINSIZEY, BLACKNESS);
 //=============================================================
 	
 	//¾À¸Å´ÏÁ® ·»´õ

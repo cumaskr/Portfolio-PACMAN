@@ -7,6 +7,13 @@ struct tagButton
 	int x, y;
 	bool isClick;
 };
+struct tagFramX
+{
+	int x, y;
+	int frameX;
+	int frameY;
+	image* img;
+};
 class pacmanMapScene : public gameNode
 {
 private:
@@ -22,12 +29,16 @@ private:
 	int _cameraX, _cameraY;
 	int _sampleCameraX, _sampleCameraY;
 	int _sampleCameraX1, _sampleCameraY1;
-	int _count;
+
 
 	float frameX, frameY;
 	CTRL mouse;
 	image* _sampleImg;
 	RECT _line;
+
+	bool _isAnyLeft;
+	tagFramX _any[6];
+	int _count;
 
 public:
 	HRESULT init(void);
@@ -36,6 +47,11 @@ public:
 	void render(void);
 
 	void check();
+
+	//맵툴 중간에 애니메이션 
+	void anyInit();
+	void anyTime();
+	void anyRender();
 
 	//맵툴 초기화
 	void MaptoolSet();
