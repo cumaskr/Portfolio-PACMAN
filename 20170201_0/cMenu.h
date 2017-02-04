@@ -12,9 +12,11 @@ class cMenu :public gameNode
 {
 private:
 	TCHAR buffer[256];
+	tag_button mapMenuRC;
+	tag_button mapEndRC;
 	tag_button mapChoiceRC;
 	tag_button mapToolRC;
-
+	
 public:
 
 	HRESULT init(void);

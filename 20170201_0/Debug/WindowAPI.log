@@ -1,9 +1,7 @@
-﻿  pacmanMapScene.cpp
-c:\users\sga\desktop\포토폴리오시작\20170201_0\pacmanmapscene.cpp(76): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 'sprintf' 선언을 참조하십시오.
-  코드를 생성하고 있습니다...
-  컴파일하고 있습니다...
-  winMain.cpp
-  mainGame.cpp
-  코드를 생성하고 있습니다...
-  WindowAPI.vcxproj -> C:\Users\SGA\Desktop\포토폴리오시작\20170201_0\Debug\WindowAPI.exe
+﻿  cMapChoice.cpp
+c:\users\sga\desktop\pacman\20170201_0\cmapchoice.cpp(26): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sga\desktop\pacman\20170201_0\cmapchoice.cpp(27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sga\desktop\pacman\20170201_0\cmapchoice.cpp(32): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sga\desktop\pacman\20170201_0\cmapchoice.cpp(34): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sga\desktop\pacman\20170201_0\cmapchoice.cpp(81): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  WindowAPI.vcxproj -> C:\Users\SGA\Desktop\PACMAN\20170201_0\Debug\WindowAPI.exe

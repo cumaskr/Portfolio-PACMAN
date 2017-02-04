@@ -5,7 +5,7 @@ class cIntro : public gameNode
 {
 private:
 	int _alpha;
-
+	bool IsRogo;
 public:
 	HRESULT init(void);
 	void release(void);

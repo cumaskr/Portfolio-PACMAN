@@ -62,7 +62,7 @@ using namespace MY_UTIL;
 #define WINNAME (LPTSTR)(TEXT("피의 수요일과 함께하는 개발3팀"))
 #define WINSTARTX	0
 #define WINSTARTY	0
-#define WINSIZEX		1000  // 1000
+#define WINSIZEX		1200  
 #define WINSIZEY		600  // 600
 #define WINSTYLE		WS_CAPTION | WS_SYSMENU
 

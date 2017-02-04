@@ -47,6 +47,15 @@ void cMapChoice::release(void)
 
 void cMapChoice::update(void)
 {
+
+
+	if (PtInRect(&map_button[0].rc , _ptMouse)&&KEYMANAGER->isOnceKeyDown(VK_LBUTTON))
+	{
+		SCENEMANAGER->changeScene("1스테이지");
+	}
+
+
+
 	if (KEYMANAGER->isOnceKeyDown(VK_LBUTTON))
 	{
 		if (PtInRect(&left_button.rc,_ptMouse))
@@ -58,10 +67,9 @@ void cMapChoice::update(void)
 			MoveRightMap();
 		}
 	}
-
-
+	
 	for (int i = 0; i < MAPMAX; i++)
-	{
+	{			
 		if (map_button[i].x == WINSIZEX/2)
 		{
 			map_button[i].alpha = 0;
@@ -77,6 +85,7 @@ void cMapChoice::update(void)
 
 void cMapChoice::render(void)
 {
+	IMAGEMANAGER->findImage("선택_백그라운드")->render(getMemDC());
 	RectangleMake(getMemDC(), left_button.rc);
 	RectangleMake(getMemDC(), right_button.rc);
 
@@ -84,5 +93,7 @@ void cMapChoice::render(void)
 	{
 		RectangleMake(getMemDC(), map_button[i].rc);
 		map_button[i].img->alphaRender(getMemDC(),map_button[i].rc.left, map_button[i].rc.top,map_button[i].alpha);
+		wsprintf(buffer, TEXT("%d"), i + 1);
+		TextOut(getMemDC(), map_button[i].rc.left, map_button[i].rc.top, buffer, lstrlen(buffer));
 	}
 }

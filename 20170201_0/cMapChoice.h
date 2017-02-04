@@ -23,12 +23,17 @@ struct tag_mapbutton
 
 class cMapChoice : public gameNode
 {
-public:
+private:
+	TCHAR buffer[256];
+
+	tag_buttons menu_RC;
 	tag_buttons left_button;
 	tag_buttons right_button;
+
 	tag_mapbutton map_button[MAPMAX];
 
-
+public:
+	
 	void MoveLeftMap();
 	void MoveRightMap();
 	HRESULT init(void);

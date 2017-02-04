@@ -13,6 +13,7 @@
 #include"cMenu.h"
 #include"cMapChoice.h"
 #include"pacmanMapScene.h"
+#include"cstage1.h"
 
 class mainGame : public gameNode
 {

@@ -1,12 +1,12 @@
 #pragma once
 #define TILESIZE 30
-#define TILEX 30
+#define TILEX 40
 #define TILEY 20
 #define TILESIZEX (TILEX * TILESIZE)
 #define TILESIZEY (TILEY * TILESIZE)
 
 #define SAMPLETILEX 20
-#define SAMPLETILEY 13
+#define SAMPLETILEY 10
 
 
 
@@ -21,12 +21,14 @@ enum CTRL
 	CTRL_BACK,
 	CTRL_TERRAINDRAW,
 	CTRL_ERASER,
+	CTRL_MOUSE,
 };
 
 //지형
 enum TERRAIN
 {
-	TR_CEMENT, TR_GROUND, TR_GRASS, TR_WATER, TR_END
+	TR_LOAD,
+	TR_WALL,
 };
 
 struct tagTiles
@@ -39,13 +41,14 @@ struct tagTiles
 	int x, y;
 };
 
- 
+
 
 struct tagSampleTiles
 {
 	RECT rc;
 	int terrainFrameX;
 	int terrainFrameY;
+	int x, y;
 };
 
 //현재타일 구조체

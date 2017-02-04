@@ -51,9 +51,6 @@
     <Filter Include="MainGame\INI테스트">
       <UniqueIdentifier>{2a6a88a9-17a4-42fc-828b-5e2153340e51}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GameFramework2D\로딩">
-      <UniqueIdentifier>{6375b8a1-c499-4877-a8d8-89de9b6e4545}</UniqueIdentifier>
-    </Filter>
     <Filter Include="MainGame\로딩화면">
       <UniqueIdentifier>{8d24ccb9-f027-4090-9de7-7e1be54d0194}</UniqueIdentifier>
     </Filter>
@@ -62,6 +59,21 @@
     </Filter>
     <Filter Include="MainGame\팩맨">
       <UniqueIdentifier>{70a558d0-5381-4e3a-a1fe-7607b77dd914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainGame\팩맨\씬">
+      <UniqueIdentifier>{83ae5b37-d77d-4698-b222-4bfdbe1ec383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainGame\팩맨\플레이어와적">
+      <UniqueIdentifier>{f57c4bff-fae1-452d-9a42-f5dd54ca29fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainGame\팩맨\맵툴">
+      <UniqueIdentifier>{0a00e486-061c-442a-a9f4-72253ef9523e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainGame\팩맨\로딩">
+      <UniqueIdentifier>{6375b8a1-c499-4877-a8d8-89de9b6e4545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainGame\팩맨\조명">
+      <UniqueIdentifier>{25a98c46-affe-4e63-b22d-41a9bed01dd4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -123,10 +135,7 @@
       <Filter>MainGame\INI테스트</Filter>
     </ClInclude>
     <ClInclude Include="loading.h">
-      <Filter>GameFramework2D\로딩</Filter>
-    </ClInclude>
-    <ClInclude Include="loadingScene.h">
-      <Filter>MainGame\로딩화면</Filter>
+      <Filter>MainGame\팩맨\로딩</Filter>
     </ClInclude>
     <ClInclude Include="timeManager.h">
       <Filter>GameFramework2D\매니져</Filter>
@@ -137,20 +146,38 @@
     <ClInclude Include="soundTestScene.h">
       <Filter>MainGame\소리재생</Filter>
     </ClInclude>
-    <ClInclude Include="cIntro.h">
-      <Filter>MainGame\팩맨</Filter>
+    <ClInclude Include="cMapChoice.h">
+      <Filter>MainGame\팩맨\씬</Filter>
     </ClInclude>
     <ClInclude Include="cMenu.h">
-      <Filter>MainGame\팩맨</Filter>
+      <Filter>MainGame\팩맨\씬</Filter>
     </ClInclude>
-    <ClInclude Include="cMapChoice.h">
-      <Filter>MainGame\팩맨</Filter>
+    <ClInclude Include="cstage1.h">
+      <Filter>MainGame\팩맨\씬</Filter>
+    </ClInclude>
+    <ClInclude Include="cPlayer.h">
+      <Filter>MainGame\팩맨\플레이어와적</Filter>
+    </ClInclude>
+    <ClInclude Include="cEnemy.h">
+      <Filter>MainGame\팩맨\플레이어와적</Filter>
+    </ClInclude>
+    <ClInclude Include="cIntro.h">
+      <Filter>MainGame\팩맨\씬</Filter>
     </ClInclude>
     <ClInclude Include="pacmanMapScene.h">
-      <Filter>MainGame\팩맨</Filter>
+      <Filter>MainGame\팩맨\맵툴</Filter>
     </ClInclude>
     <ClInclude Include="pacmanMapNode.h">
-      <Filter>MainGame\팩맨</Filter>
+      <Filter>MainGame\팩맨\맵툴</Filter>
+    </ClInclude>
+    <ClInclude Include="loadingScene.h">
+      <Filter>MainGame\팩맨\로딩</Filter>
+    </ClInclude>
+    <ClInclude Include="cLight.h">
+      <Filter>MainGame\팩맨\조명</Filter>
+    </ClInclude>
+    <ClInclude Include="pacmanMapTool.h">
+      <Filter>MainGame\팩맨\씬</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -206,10 +233,7 @@
       <Filter>MainGame\INI테스트</Filter>
     </ClCompile>
     <ClCompile Include="loading.cpp">
-      <Filter>GameFramework2D\로딩</Filter>
-    </ClCompile>
-    <ClCompile Include="loadingScene.cpp">
-      <Filter>MainGame\로딩화면</Filter>
+      <Filter>MainGame\팩맨\로딩</Filter>
     </ClCompile>
     <ClCompile Include="timeManager.cpp">
       <Filter>GameFramework2D\매니져</Filter>
@@ -220,17 +244,35 @@
     <ClCompile Include="soundTestScene.cpp">
       <Filter>MainGame\소리재생</Filter>
     </ClCompile>
-    <ClCompile Include="cIntro.cpp">
-      <Filter>MainGame\팩맨</Filter>
+    <ClCompile Include="cMapChoice.cpp">
+      <Filter>MainGame\팩맨\씬</Filter>
     </ClCompile>
     <ClCompile Include="cMenu.cpp">
-      <Filter>MainGame\팩맨</Filter>
+      <Filter>MainGame\팩맨\씬</Filter>
     </ClCompile>
-    <ClCompile Include="cMapChoice.cpp">
-      <Filter>MainGame\팩맨</Filter>
+    <ClCompile Include="cstage1.cpp">
+      <Filter>MainGame\팩맨\씬</Filter>
+    </ClCompile>
+    <ClCompile Include="cPlayer.cpp">
+      <Filter>MainGame\팩맨\플레이어와적</Filter>
+    </ClCompile>
+    <ClCompile Include="cEnemy.cpp">
+      <Filter>MainGame\팩맨\플레이어와적</Filter>
+    </ClCompile>
+    <ClCompile Include="cIntro.cpp">
+      <Filter>MainGame\팩맨\씬</Filter>
     </ClCompile>
     <ClCompile Include="pacmanMapScene.cpp">
-      <Filter>MainGame\팩맨</Filter>
+      <Filter>MainGame\팩맨\맵툴</Filter>
+    </ClCompile>
+    <ClCompile Include="loadingScene.cpp">
+      <Filter>MainGame\팩맨\로딩</Filter>
+    </ClCompile>
+    <ClCompile Include="cLight.cpp">
+      <Filter>MainGame\팩맨\조명</Filter>
+    </ClCompile>
+    <ClCompile Include="pacmanMapTool.cpp">
+      <Filter>MainGame\팩맨\씬</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

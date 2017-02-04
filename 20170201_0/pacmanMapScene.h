@@ -1,18 +1,33 @@
 #pragma once
 #include "gameNode.h"
 #include "pacmanMapNode.h"
+struct tagButton
+{
+	RECT rc;
+	int x, y;
+	bool isClick;
+};
 class pacmanMapScene : public gameNode
 {
 private:
 	tagTiles tile[TILEY][TILEX];
 	tagSampleTiles sampleTile[SAMPLETILEY][SAMPLETILEX];
 	tagCurrentTiles currentTile;
+	tagButton _button[5];
 
-	RECT _rc[4];
+
+	RECT _rc[5];
 	RECT _camera;
+	RECT _sampleCamera;
 	int _cameraX, _cameraY;
+	int _sampleCameraX, _sampleCameraY;
+	int _sampleCameraX1, _sampleCameraY1;
+	int _count;
 
+	float frameX, frameY;
 	CTRL mouse;
+	image* _sampleImg;
+	RECT _line;
 
 public:
 	HRESULT init(void);
@@ -22,11 +37,23 @@ public:
 
 	void check();
 
+	//맵툴 초기화
 	void MaptoolSet();
+	//샘플이미지 옆 버튼 초기화
+	void buttoninit();
+	//왼쪽 맵 타일그리기
 	void Map();
+	//버튼 클릭하기
+	void buttonClick();
+	//왼쪽맵 렌더
 	void MapRender();
+	//샘플이미지 옆 버튼 렌더
+	void buttonRender();
+	//카메라 움직임
 	void cameraMove();
+	//세이브
 	void save();
+	//로드
 	void load();
 
 	TERRAIN terrainSelect(int frameX, int frameY);

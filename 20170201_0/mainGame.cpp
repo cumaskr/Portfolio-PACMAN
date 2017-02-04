@@ -21,6 +21,7 @@ HRESULT mainGame::init(void)
 	SCENEMANAGER->addScene("메인메뉴", new cMenu);
 	SCENEMANAGER->addScene("맵툴", new pacmanMapScene);
 	SCENEMANAGER->addScene("맵선택", new cMapChoice);
+	SCENEMANAGER->addScene("1스테이지", new cstage1);
 	
 	/*처음씬 설정*/
 	SCENEMANAGER->changeScene("인트로");

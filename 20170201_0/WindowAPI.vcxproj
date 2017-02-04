@@ -143,10 +143,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="bullet.h" />
+    <ClInclude Include="cEnemy.h" />
     <ClInclude Include="cIntro.h" />
+    <ClInclude Include="cLight.h" />
     <ClInclude Include="cMapChoice.h" />
     <ClInclude Include="cMenu.h" />
     <ClInclude Include="commonMacroFunction.h" />
+    <ClInclude Include="cPlayer.h" />
+    <ClInclude Include="cstage1.h" />
     <ClInclude Include="gameNode.h" />
     <ClInclude Include="image.h" />
     <ClInclude Include="imageManager.h" />
@@ -157,6 +161,7 @@
     <ClInclude Include="loadingScene.h" />
     <ClInclude Include="mainGame.h" />
     <ClInclude Include="pacmanMapScene.h" />
+    <ClInclude Include="pacmanMapTool.h" />
     <ClInclude Include="pixelCollision.h" />
     <ClInclude Include="playerData.h" />
     <ClInclude Include="progressBar.h" />
@@ -174,9 +179,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="bullet.cpp" />
+    <ClCompile Include="cEnemy.cpp" />
     <ClCompile Include="cIntro.cpp" />
+    <ClCompile Include="cLight.cpp" />
     <ClCompile Include="cMapChoice.cpp" />
     <ClCompile Include="cMenu.cpp" />
+    <ClCompile Include="cPlayer.cpp" />
+    <ClCompile Include="cstage1.cpp" />
     <ClCompile Include="gameNode.cpp" />
     <ClCompile Include="image.cpp" />
     <ClCompile Include="imageManager.cpp" />
@@ -187,6 +196,7 @@
     <ClCompile Include="loadingScene.cpp" />
     <ClCompile Include="mainGame.cpp" />
     <ClCompile Include="pacmanMapScene.cpp" />
+    <ClCompile Include="pacmanMapTool.cpp" />
     <ClCompile Include="pixelCollision.cpp" />
     <ClCompile Include="playerData.cpp" />
     <ClCompile Include="progressBar.cpp" />
