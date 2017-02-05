@@ -27,8 +27,11 @@ void loadingScene::update(void)
 
 	if (_loading->loadingDone())
 	{
-		//로딩이 완료 됐으니 씬변경
-		SCENEMANAGER->changeScene("메인메뉴");
+		if (KEYMANAGER->isOnceKeyDown(VK_RETURN))
+		{
+			//로딩이 완료 됐으니 씬변경
+			SCENEMANAGER->changeScene("메인메뉴");
+		}
 	}
 }
 
@@ -44,22 +47,36 @@ void loadingScene::loadingImage(void)
 	//_loading->loadImage();
 	//_loading->loadFrameImage();
 
-	//로딩이 너무 빠르게 진행되서 천천히 돌아가도록 테스트용으로 만들어 놓자
-	for (int i = 0; i < 200; i++)
-	{
-		_loading->loadImage("테스트", WINSIZEX, WINSIZEY);
-	}
-	//백그라운드 이미지
-	//_loading->loadImage("백그라운드", "background.bmp", WINSIZEX, WINSIZEY);	
-	_loading->loadImage("알파50", "mapchoice_white.bmp", 50, 50, true, RGB(255, 0, 255));	
-	_loading->loadImage("메뉴_메뉴", "menu_1.bmp", 500, 100,true,RGB(255,0,255));
+///////////////////////////////////////////////////////////////////////////////////////////////////////////우형
+	_loading->loadImage("알파50", "mapchoice_white.bmp", 50, 50, true, RGB(255, 0, 255));
+	_loading->loadImage("메뉴_메뉴", "menu_1.bmp", 500, 100, true, RGB(255, 0, 255));
 	_loading->loadImage("메뉴_게임", "menu_2.bmp", 200, 100, true, RGB(255, 0, 255));
 	_loading->loadImage("메뉴_게임2", "menu_2_big.bmp", 210, 110, true, RGB(255, 0, 255));
 	_loading->loadImage("메뉴_맵툴", "menu_3.bmp", 200, 100, true, RGB(255, 0, 255));
 	_loading->loadImage("메뉴_맵툴2", "menu_3_big.bmp", 210, 110, true, RGB(255, 0, 255));
 	_loading->loadImage("메뉴_종료", "menu_4.bmp", 200, 100, true, RGB(255, 0, 255));
 	_loading->loadImage("메뉴_종료2", "menu_4_big.bmp", 210, 110, true, RGB(255, 0, 255));
+
 	_loading->loadImage("선택_백그라운드", "choice_back.bmp", WINSIZEX, WINSIZEY, true, RGB(255, 0, 255));
+	_loading->loadImage("선택_백그라운드2", "choice_back2.bmp", WINSIZEX, WINSIZEY, true, RGB(255, 0, 255));
+	_loading->loadImage("선택_메뉴", "choice_menu.bmp", 200, 100, true, RGB(255, 0, 255));
+	_loading->loadImage("선택_메뉴2", "choice_menu2.bmp", 200, 100, true, RGB(255, 0, 255));
+	_loading->loadImage("선택_메뉴3", "choice_menu2_big.bmp", 210, 110, true, RGB(255, 0, 255));
+	_loading->loadImage("선택_맵1", "choice_map1.bmp", 250, 150, true, RGB(255, 0, 255));
+	_loading->loadImage("선택_맵2", "choice_map2.bmp", 250, 150, true, RGB(255, 0, 255));
+	_loading->loadImage("선택_맵3", "choice_map3.bmp", 250, 150, true, RGB(255, 0, 255));
+	_loading->loadImage("선택_맵4", "choice_map4.bmp", 250, 150, true, RGB(255, 0, 255));
+	_loading->loadImage("선택_맵5", "choice_map5.bmp", 250, 150, true, RGB(255, 0, 255));
+	_loading->loadFrameImage("선택_버튼", "choice_button.bmp", 100, 50, 2, 1, true, RGB(255, 0, 255));
+	_loading->loadFrameImage("선택_버튼2", "choice_button_big.bmp", 110, 60, 2, 1, true, RGB(255, 0, 255));
+	_loading->loadImage("메뉴_이름1", "choice_name1.bmp", 300, 70, true, RGB(255, 0, 255));
+	_loading->loadImage("메뉴_이름2", "choice_name2.bmp", 300, 70, true, RGB(255, 0, 255));
+	_loading->loadImage("메뉴_이름3", "choice_name3.bmp", 300, 70, true, RGB(255, 0, 255));
+	_loading->loadImage("메뉴_이름4", "choice_name4.bmp", 300, 70, true, RGB(255, 0, 255));
+	_loading->loadImage("메뉴_이름5", "choice_name5.bmp", 300, 70, true, RGB(255, 0, 255));
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////승희
 	_loading->loadFrameImage("pacmanMap", "pacmanMap1.bmp", 600, 300, 20, 10);
 	//_loading->loadImage("maptooMenu", "maptooMenu0.bmp", 20, 30, true, RGB(255, 0, 255));
 	_loading->loadImage("ChangeSampleImgMenu", "ChangeSampleImgMenu.bmp", 20, 50, true, RGB(255, 0, 255));

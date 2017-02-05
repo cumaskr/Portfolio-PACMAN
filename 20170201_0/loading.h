@@ -60,6 +60,9 @@ public:
 class loading : public gameNode
 {
 private:
+	char buffer[256];
+	char path[256];
+	char perCent[256];
 	//로드아이템 클래스를 담을 벡터 및 반복자
 	typedef vector<loadItem*> arrLoadItem;
 	typedef vector<loadItem*>::iterator arrLoadItemIter;

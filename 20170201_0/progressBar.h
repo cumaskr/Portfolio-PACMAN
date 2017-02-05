@@ -7,6 +7,7 @@
 class progressBar : public gameNode
 {
 private:
+	TCHAR buffer[256];
 	RECT _rcProgress;			//체력바 렉트
 	int _x, _y;					//체력바 위치 좌표
 	float _width;				//체력바 가로길이
@@ -14,6 +15,7 @@ private:
 
 	image* _progressBarFront;	//체력바 앞 이미지
 	image* _progressBarBack;		//체력바 뒤 이미지
+
 
 public:
 	//체력바 초기화(앞이미지키,백이미지키, x, y, 가로길이, 세로길이)
@@ -25,6 +27,9 @@ public:
 	//체력바 게이지 세팅하기
 	void setGauge(float currentHp, float maxHp);
 
+	image* GetImage() { return _progressBarFront; }
+
+	float GetWidth() { return _width; }
 	//체력바 위치 좌표 세팅하기
 	void setX(int x) { _x = x; }
 	void setY(int y) { _y = y; }

@@ -27,7 +27,7 @@ HRESULT progressBar::init(char * frontImageKey, char * backImageKey, int x, int 
 	//체력바 이미지 초기화
 	_progressBarFront = IMAGEMANAGER->addImage(frontImageKey, frontImage, x, y, width, height, true, RGB(255, 0, 255));
 	_progressBarBack = IMAGEMANAGER->addImage(backImageKey, backImage, x, y, width, height, true, RGB(255, 0, 255));
-	
+
 	return S_OK;
 }
 
@@ -47,6 +47,7 @@ void progressBar::render(void)
 	//앞에 보여지는 체력바 이미지
 	_progressBarFront->render(getMemDC(), _rcProgress.left, _y,
 		0, 0, _width, _progressBarFront->getHeight());
+
 
 }
 //체력바 게이지 세팅하기

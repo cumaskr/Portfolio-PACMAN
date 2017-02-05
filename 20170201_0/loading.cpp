@@ -91,10 +91,12 @@ HRESULT loadItem::init(string keyName, const char * fileName, float x, float y, 
 HRESULT loading::init(void)
 {
 	//로딩화면 백그라운드 이미지 초기화
-	_background = IMAGEMANAGER->addImage("메뉴_백그라운드", "menu_back.bmp", WINSIZEX, WINSIZEY);	
+	_background = IMAGEMANAGER->addImage("메뉴_백그라운드", "menu_back.bmp", WINSIZEX, WINSIZEY);
+	IMAGEMANAGER->addFrameImage("로드_팩맨", "load_pacman.bmp", 150, 50, 3, 1, true, RGB(255, 0, 255));
+
 	//로딩바 초기화
 	_loadingBar = new progressBar;
-	_loadingBar->init("loadingBarFront", "loadingBarBack", 100, 430, 600, 20);
+	_loadingBar->init("loadingBarFront", "loadingBarBack", 300, WINSIZEY / 2, 600, 20);
 	_loadingBar->setGauge(0, 0);
 	//현재 게이지 초기화
 	_currentGauge = 0;
@@ -112,6 +114,20 @@ void loading::update(void)
 {
 	//로딩바 업데이트
 	_loadingBar->update();
+	int static nCount = 0;
+	nCount++;
+	if (nCount>1000)
+	{
+		nCount = 0;
+	}
+	if (nCount % 10 == 0)
+	{
+		AniX++;
+		if (AniX>2)
+		{
+			AniX = 0;
+		}
+	}
 }
 
 void loading::render(void)
@@ -121,6 +137,21 @@ void loading::render(void)
 
 	//로딩바 렌더
 	_loadingBar->render();
+
+	IMAGEMANAGER->findImage("로드_팩맨")->frameRender(getMemDC(), _loadingBar->GetImage()->getX() + _loadingBar->GetWidth(), _loadingBar->GetImage()->getY(), AniX, 0);
+	//SetBkMode(getMemDC(), TRANSPARENT);
+	SetTextColor(getMemDC(), RGB(0, 0, 0));
+
+	TextOut(getMemDC(), _loadingBar->getRect().left + 100, _loadingBar->getRect().top + 40, path, lstrlen(path));
+	TextOut(getMemDC(), _loadingBar->getRect().left + 100, _loadingBar->getRect().top + 60, perCent, lstrlen(perCent));
+
+
+
+	if (loadingDone() == true)
+	{
+		wsprintf(buffer, TEXT("%s"), "엔터키를 누르세요!");
+		TextOut(getMemDC(), 350, 433, buffer, lstrlen(buffer));
+	}
 }
 
 void loading::loadImage(string strKey, int width, int height)
@@ -176,7 +207,7 @@ BOOL loading::loadingDone(void)
 		IMAGEMANAGER->addImage(img.keyName, img.width, img.height);
 	}
 	break;
-	
+
 	case LOAD_KIND_IMAGE_1:
 	{
 		tagImageResource img = item->getImageResource();
@@ -209,9 +240,14 @@ BOOL loading::loadingDone(void)
 		break;
 	}
 
+	GetCurrentDirectory(256, path);
+	sprintf(buffer, "\\%s.bmp", _vLoadItem[_currentGauge]->getImageResource().keyName.c_str());
+	//sprintf(buffer, "\\%s.bmp", _vLoadItem[_currentGauge]->getImageResource().fileName);
+	strcat(path, buffer);
 	//현재게이지 증가
 	_currentGauge++;
 
+	wsprintf(perCent, TEXT("%d%c"), ((_currentGauge * 100) / _vLoadItem.size()), '%');
 	//로딩바 이미지 변경
 	_loadingBar->setGauge(_currentGauge, _vLoadItem.size());
 
