@@ -1,2 +1,28 @@
-﻿  WindowAPI.vcxproj -> C:\Users\WINDOWS\Documents\GitHub\PACMAN\20170201_0\Debug\WindowAPI.exe
+﻿  loading.cpp
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(27): warning C4800: 'BOOL': 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(40): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(41): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(44): warning C4800: 'BOOL': 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(61): warning C4800: 'BOOL': 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(74): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(75): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(80): warning C4800: 'BOOL': 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(141): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(150): warning C4805: '==': 연산에 'BOOL' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(195): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(221): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(235): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(252): warning C4244: '인수': 'unsigned int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(252): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(244): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 'sprintf' 선언을 참조하십시오.
+c:\users\windows\documents\github\pacman\20170201_0\loading.cpp(246): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: 'strcat' 선언을 참조하십시오.
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  winMain.cpp
+  mainGame.cpp
+  loadingScene.cpp
+  코드를 생성하고 있습니다...
+  WindowAPI.vcxproj -> C:\Users\WINDOWS\Documents\GitHub\PACMAN\20170201_0\Debug\WindowAPI.exe
   WindowAPI.vcxproj -> C:\Users\WINDOWS\Documents\GitHub\PACMAN\20170201_0\Debug\WindowAPI.pdb (Full PDB)

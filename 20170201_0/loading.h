@@ -63,6 +63,7 @@ private:
 	char buffer[256];
 	char path[256];
 	char perCent[256];
+
 	//로드아이템 클래스를 담을 벡터 및 반복자
 	typedef vector<loadItem*> arrLoadItem;
 	typedef vector<loadItem*>::iterator arrLoadItemIter;
@@ -75,6 +76,7 @@ private:
 	image* _background;
 	progressBar* _loadingBar;
 	int _currentGauge;
+	int AniX = 0;
 
 public:
 	HRESULT init(void);
